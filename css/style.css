@@ -1,23 +1,27 @@
-* {
-}
-header {
-	/*outline: 2px solid rgba(255,0,0,.5)*/
-}
+/* {
+	outline: 2px solid rgba(255,0,0,.5)
+}*/
+
 body {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 14px;
 }
-ul {
-	list-style-type: none ;
-}
-a {
-	text-decoration: none;
-	color:#336699;
-}
-p {
-	/*line-height: 20px;*/
-}
+	p {
+		line-height: 1.8em;
+	}
+	a {
+		text-decoration: none;
+		color:#336699;
+		transition: font-weight 0.5s;
 
+	}
+		a:hover {
+			color: #4354DB;
+			font-weight: bold;
+		}
+	ul {
+		list-style-type: none ;
+	}
 
 /*****HEADER (Estilos copiados del ejercicio*/
 header {
@@ -27,7 +31,7 @@ header {
 	color: #fff;
 	border-bottom: 1px solid #333;
 }
-	.logo {""
+	.logo {
 		width: 80px;
 		height: 80px;
 	}
@@ -47,34 +51,36 @@ header {
 		margin: 0;
 		padding: 0;
 	}
-	nav li:hover a {
-		background: #585858;
-	}
+		nav li:hover a {
+			background: #B43C27;
+			border-radius: 5px;
+		}
 	nav a {
 		padding: 10px 15px;
 		color: #eee;
 		text-shadow: 2px 2px 4px #000;
 	}
-	nav a:hover {
-		color:#fff;
-	}
+		nav a:hover {
+			color:#fff;
+		}
 /*****FIN HEADER*/
 
 /*****LASTEST EPISODES*/
 .last-ep>.container {
 	background-color: #eee;
-	padding-top: 15px;
-	padding-bottom: 25px ;
-	border-bottom: 5px solid #fff;
+	padding-bottom: 30px ;
+	border-bottom: 5px solid #ccc;
 }
 .last-ep img {
 	width: 100%;
+}
+.last-ep h2 {
+	margin: 15px 0;
 }
 .last-ep span {
 	font-weight: normal;
 	font-size: 12px;
 	padding-left: 10px;
-
 }
 .last-ep a {
 	font-weight: bold;
@@ -85,18 +91,23 @@ header {
 /*****CONTENIDO*/
 /***Shows*/
 	.col-shows {
-		width: 18.822223%;/*12/5*100*/
+		width: 18.822223%;/* 12/5*100 aprox. */
 		padding-right: 7px !important;
 		margin-top: 20px;
 	}
 	.shows img {
 		width: 100%;
 	}
-	.img-borde {
+	.img-borde { /*Estilo tambien para la sección latest episodes*/
 		background: #fff;
     	padding: 3px;
     	border: solid 1px #999;
+    	transition:all 0.25s;
 	}
+		.img-borde:hover {
+			padding: 1px;
+			border: 0px;
+		}
 /*fin Shows*/
 
 /***Side Bar Right*/
@@ -136,7 +147,12 @@ footer p {
 }
 footer a{
 	color: #ccc;
+	text-shadow: 1px 1px 2px #000;
 }
+	.nav-footer li:hover a {
+		color: orange;
+		font-weight: bold;
+	}
 .copyright {
 	color: #999;
 }
